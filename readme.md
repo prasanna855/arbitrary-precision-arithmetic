@@ -20,13 +20,14 @@ mvn clean package
 
 ## How to Run
 
-Running python file.Python file is created.Can add some more test cases there.
+Running python file.Python file is created. Can add some more test cases there.
 
 ## Features
 
 - Big int add, sub, mul, div
 - Big float add, sub, mul, div
 - Up to 30 digits after point 
+- will perform arithmetic operations
 
 ## Git Info
 
