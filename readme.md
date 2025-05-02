@@ -8,7 +8,7 @@ This project is a Java library to do maths on very big numbers. It can do **add,
 - `AFloat.java` – for doing float math  
 - `MyInfArith.java` – main file to run with command line  
 - `pom.xml` – for Maven build 
-- `run_tests.py` - for test cases and to check whether maven exists and installed. 
+- `run_tests.py` - for test cases and to compile java programs and to check whether maven exists and installed. 
 
 ## How to Build
 
