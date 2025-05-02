@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Arbitrary Precision Arithmetic in Java}
+\author{B SAI PRASANNA}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Abstract}
+This report is about a Java project to make a library that does math with very big numbers, both int and float. It can do add, subtract, multiply and divide with no loss in precision. We use strings to keep the digits and avoid normal data type limits.
+
+\section*{Design}
+I made two class: \texttt{AInteger} for big integers and \texttt{AFloat} for big float numbers. We used strings inside to keep the digits, so we can go bigger than normal int. We made functions for parsing string and for doing math operations.
+
+\begin{itemize}
+\item \texttt{AInteger}: it supports \texttt{+ - * /} and string input.
+\item \texttt{AFloat}: it has integer part (using \texttt{AInteger}) and decimal part using \texttt{String}.
+\end{itemize}
+
+\section*{Implementation Overview}
+We wrote our own add, subtract, etc using digit by digit logic. We split float numbers into two part - integer and decimal part. We made sure it handle minus sign and trailing zeros also. If the float is like 0.0000000000000001 we still keep it.
+
+\section*{How to Use}
+To run this, first build using Maven or Ant.
+
+\begin{verbatim}
+running python file created in the folder.
+\end{verbatim}
+
+
+\section*{Git Information}
+This project is uploaded on GitHub. I used commits and also tags like v1-addition, v2-subtraction.
+
+\begin{itemize}
+\item Repo: \url{https://github.com/prasanna855/arbitraryarithmetic}
+\end{itemize}
+
+\begin{center}
+\end{center}
+
+\section*{Limitations}
+Still working on better float division. Also float multiply with lots of digits is slow. We not yet add rounding, we only cut at 30 digits.
+
+\section*{Testing and Verification}
+I tested with manual inputs and wrote sample unit tests. All 4 operations pass for normal and large values. We made sure minus sign and 0 values are handled good.
+
+\section*{Learnings}
+I learned how to use Git, how to write Java class with big number logic, also how to split float into integer and fractional parts. Also learned how Maven works and how to build project using it. It was fun and hard both.
+
+\end{document}
+
+
