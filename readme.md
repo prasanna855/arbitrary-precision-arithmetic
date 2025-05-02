@@ -27,7 +27,7 @@ Running python file.Python file is created. Can add some more test cases there.
 - Big int add, sub, mul, div
 - Big float add, sub, mul, div
 - Up to 30 digits after point 
-- will perform arithmetic operations
+- will perform arithmetic operations for big integers
 
 ## Git Info
 
